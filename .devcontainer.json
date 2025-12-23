@@ -1,6 +1,6 @@
 {
   "name": "EOS Home Assistant add-on repository",
-  "image": "ghcr.io/home-assistant/devcontainer:addons-a3e692f",
+  "image": "ghcr.io/home-assistant/devcontainer:2-addons",
   "appPort": [
     "7123:8123",
     "7357:4357"
@@ -11,6 +11,8 @@
     "GIT_EDITOR=code --wait",
     "--privileged"
   ],
+  "workspaceFolder": "/mnt/supervisor/addons/local/${localWorkspaceFolderBasename}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind,consistency=cached",
   "containerEnv": {
     "WORKSPACE_DIRECTORY": "${containerWorkspaceFolder}"
   },
@@ -21,8 +23,7 @@
     "vscode": {
       "extensions": [
         "timonwong.shellcheck",
-        "esbenp.prettier-vscode",
-        "humao.rest-client"
+        "esbenp.prettier-vscode"
       ],
       "settings": {
         "terminal.integrated.profiles.linux": {
