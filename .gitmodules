@@ -1,4 +1,4 @@
 [submodule "eos/eos"]
 	path = eos/eos
 	url = https://github.com/Akkudoktor-EOS/EOS.git
-	branch = main
+	tag = v0.1.0
