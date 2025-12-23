@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: EOS local build add-on
-version: "1.2.3"
+version: "1.2.4"
 slug: eos-lb
 description: Energy Optimization System add-on
 url: "https://github.com/Duetting/ha_eos_addon/tree/main/eos_local_build"

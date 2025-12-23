@@ -1,5 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.2.4
+
+- Revert the fixed change of IP listen addreess for server and EOSdash to 0.0.0.0
+- Update to EOS 0.1.0 (0.2.0 optimize call doesn't work at least for me)
+
 ## 1.2.3
 
 - Change IP listen addreess for server and EOSdash to 0.0.0.0 and add default config

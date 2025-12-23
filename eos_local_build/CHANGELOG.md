@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.2.4
+
+- Revert the fixed change of IP listen addreess for server and EOSdash to 0.0.0.0
+
 ## 1.2.3
 
 - Change IP listen addreess for server and EOSdash to 0.0.0.0 and add default config

@@ -41,10 +41,6 @@ if [ ! -f /opt/eos/EOS.config.json ]; then
     ln -s "/config/eos/EOS.config.json" "/opt/eos/EOS.config.json"
 fi
 
-bashio::log.info "Update listen IP address in EOS.config.json"
-jq '.server.host = "0.0.0.0"' "/config/eos/EOS.config.json" | sponge "/config/eos/EOS.config.json"
-jq '.server.eosdash_host = "0.0.0.0"' "/config/eos/EOS.config.json" | sponge "/config/eos/EOS.config.json"
-
 bashio::log.info "Current EOS.config.json content"
 jq "." "/config/eos/EOS.config.json"
 
